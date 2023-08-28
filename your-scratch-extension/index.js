@@ -14,14 +14,14 @@ class Scratch3YourExtension {
     getInfo () {
         return {
             // unique ID for your extension
-            id: 'yourScratchExtension',
+            id: 'EE',
 
             // name that will be displayed in the Scratch UI
-            name: 'Demo',
+            name: 'E',
 
             // colours to use for your extension blocks
-            color1: '#000099',
-            color2: '#660066',
+            color1: '#25f5f5',
+            color2: '#25f5f5',
 
             // icons to display
             blockIconURI: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAAAAACyOJm3AAAAFklEQVQYV2P4DwMMEMgAI/+DEUIMBgAEWB7i7uidhAAAAABJRU5ErkJggg==',
@@ -31,7 +31,7 @@ class Scratch3YourExtension {
             blocks: [
                 {
                     // name of the function where your block code lives
-                    opcode: 'myFirstBlock',
+                    opcode: 'E',
 
                     // type of block - choose from:
                     //   BlockType.REPORTER - returns a value, like "direction"
@@ -41,7 +41,7 @@ class Scratch3YourExtension {
                     blockType: BlockType.REPORTER,
 
                     // label to display on the block
-                    text: 'My first block [MY_NUMBER] and [MY_STRING]',
+                    text: 'E [MY_NUMBER] E [MY_STRING]',
 
                     // true if this block should end a stack
                     terminal: false,
@@ -56,7 +56,7 @@ class Scratch3YourExtension {
                     arguments: {
                         MY_NUMBER: {
                             // default value before the user sets something
-                            defaultValue: 123,
+                            defaultValue: 911,
 
                             // type/shape of the parameter - choose from:
                             //     ArgumentType.ANGLE - numeric value with an angle picker
@@ -69,7 +69,7 @@ class Scratch3YourExtension {
                         },
                         MY_STRING: {
                             // default value before the user sets something
-                            defaultValue: 'hello',
+                            defaultValue: 'UwU',
 
                             // type/shape of the parameter - choose from:
                             //     ArgumentType.ANGLE - numeric value with an angle picker
@@ -93,7 +93,7 @@ class Scratch3YourExtension {
      */
     myFirstBlock ({ MY_NUMBER, MY_STRING }) {
         // example implementation to return a string
-        return MY_STRING + ' : doubled would be ' + (MY_NUMBER * 2);
+        return MY_STRING + ' willem ' + (MY_NUMBER * 2);
     }
 }
 
